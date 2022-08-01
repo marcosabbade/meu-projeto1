@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'BP';
+    src: url(fontes/Boarding\ PersonalUse.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anti';
+    src: url(fontes/Antiokhia\ Demo\ Version.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    background-attachment: fixed;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: rgba(117, 116, 116, 0);
+    font-family: var(--fonte1);
+}    
+
+header {
+    background-color: var(--cor5);
+    padding-top: 15px;
+    padding: 15px;
+    min-height: 500px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+}
+
+header#img1 {
+    background-image: url(imagens/pexels-kevser-5505794.jpg);
+    background-position: center center;
+}
+
+header > h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-destaque);
+    font-size: 45pt;
+    text-align: center;
+    margin: 250px;
+}
+
+nav {
+    text-align: right;
+    background-color: var(--cor5);
+}
+
+nav > a {
+    font-size: larger;
+    text-decoration: none;
+    color: #DDC67B;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    padding: 15px;
+    background-color: #118131;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+:root {
+    --cor1: #DDC67B;
+    --cor2: #201E50;
+    --cor3: #55443b;
+    --cor4: #E9E6FF;
+    --cor5: #0b501f;
+
+    --fonte-titulo: 'BP', 'cursive';
+    --fonte-destaque: 'Anti', 'cursive';
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+.imagem {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -24,10 +24,16 @@ body {
     background-attachment: fixed;
 }
 
+html {
+    background-color: var(--cor3);
+    background-image: url(imagens/pexels-sohail-nachiti-807598.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 html, body {
     min-height: 100vh;
-    background-color: rgba(117, 116, 116, 0);
     font-family: var(--fonte1);
 }    
 
@@ -35,13 +41,18 @@ header {
     background-color: var(--cor5);
     padding-top: 15px;
     padding: 15px;
-    min-height: 500px;
+    min-height: 200px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
 }
 
-header#img1 {
-    background-image: url(imagens/pexels-kevser-5505794.jpg);
+main#img1 {
+    background-image: url(imagens/pexels-spencer-selover-428310.png);
     background-position: center center;
+}
+
+#img2 {
+    background-image: url(imagens/pexels-sohail-nachiti-807598.jpg);
+    background-position: center left;
 }
 
 header > h1 {
@@ -49,18 +60,18 @@ header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 45pt;
     text-align: center;
-    margin: 250px;
+    margin: 70px;
 }
 
 nav {
     text-align: right;
-    background-color: var(--cor5);
+    background-color: var(--cor3);
 }
 
 nav > a {
     font-size: larger;
     text-decoration: none;
-    color: #DDC67B;
+    color: var(--cor1);
     padding: 15px;
     margin-right: 10px;
 }
@@ -72,10 +83,35 @@ nav > a:hover {
     transition: 0.5s;
 }
 
+main {
+    margin: auto;
+    max-width: 1000px;
+    background-color: white;
+    text-align: justify;
+    font-family: var(--fonte1);
+}
+
+article {
+    display: flexbox;
+}
+
+ul {
+    display: flex;
+    
+}
+
+li {
+    margin: auto;
+}
+
+p {
+    padding: 7px;
+}
+
 :root {
     --cor1: #DDC67B;
     --cor2: #201E50;
-    --cor3: #55443b;
+    --cor3: #745d51;
     --cor4: #E9E6FF;
     --cor5: #0b501f;
 

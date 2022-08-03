@@ -63,6 +63,12 @@ header > h1 {
     margin: 70px;
 }
 
+a {
+    text-decoration: none;
+    margin-top: 2px;
+    color: black;
+}
+
 nav {
     text-align: right;
     background-color: var(--cor3);
@@ -106,6 +112,25 @@ li {
 
 p {
     padding: 7px;
+}
+
+.shelf-product_info {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column nowrap;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1 1 100%;
+}
+
+.shelf-product__link{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 5px 0;
 }
 
 :root {

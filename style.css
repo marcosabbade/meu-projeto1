@@ -22,14 +22,7 @@
 body {
     margin: 0;
     background-attachment: fixed;
-}
-
-html {
-    background-color: var(--cor3);
-    background-image: url(imagens/pexels-sohail-nachiti-807598.jpg);
-    background-position: center right;
-    background-size: cover;
-    background-attachment: fixed;
+    box-shadow: 2px 2px 3px black;
 }
 
 html, body {
@@ -45,18 +38,8 @@ header {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
 }
 
-main#img1 {
-    background-image: url(imagens/pexels-spencer-selover-428310.png);
-    background-position: center center;
-}
-
-#img2 {
-    background-image: url(imagens/pexels-sohail-nachiti-807598.jpg);
-    background-position: center left;
-}
-
 header > h1 {
-    color: var(--cor3);
+    color: var(--cor4);
     font-family: var(--fonte-destaque);
     font-size: 45pt;
     text-align: center;
@@ -71,7 +54,7 @@ a {
 
 nav {
     text-align: right;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
 }
 
 nav > a {
@@ -134,11 +117,11 @@ p {
 }
 
 :root {
-    --cor1: #DDC67B;
-    --cor2: #201E50;
-    --cor3: #745d51;
-    --cor4: #E9E6FF;
-    --cor5: #0b501f;
+    --cor1: #231F20;
+    --cor2: #568259;
+    --cor3: #667761;
+    --cor4: #D8DBE2;
+    --cor5: #0090C1;
 
     --fonte-titulo: 'BP', 'cursive';
     --fonte-destaque: 'Anti', 'cursive';

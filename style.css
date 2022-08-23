@@ -1,137 +1,162 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'BP';
-    src: url(fontes/Boarding\ PersonalUse.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anti';
-    src: url(fontes/Antiokhia\ Demo\ Version.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 body {
     margin: 0;
-    background-attachment: fixed;
-    box-shadow: 2px 2px 3px black;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: hidden;
 }
 
-html, body {
-    min-height: 100vh;
-    font-family: var(--fonte1);
-}    
-
-header {
-    background-color: var(--cor5);
-    padding-top: 15px;
-    padding: 15px;
-    min-height: 200px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+body * {
+    box-sizing: border-box;
 }
 
-header > h1 {
-    color: var(--cor4);
-    font-family: var(--fonte-destaque);
-    font-size: 45pt;
-    text-align: center;
-    margin: 70px;
-}
-
-a {
-    text-decoration: none;
-    margin-top: 2px;
-    color: black;
-}
-
-nav {
-    text-align: right;
-    background-color: var(--cor4);
-}
-
-nav > a {
-    font-size: larger;
-    text-decoration: none;
-    color: var(--cor1);
-    padding: 15px;
-    margin-right: 10px;
-}
-
-nav > a:hover {
-    padding: 15px;
-    background-color: #118131;
-    border-radius: 12px;
-    transition: 0.5s;
-}
-
-main {
-    margin: auto;
-    max-width: 1000px;
-    background-color: white;
-    text-align: justify;
-    font-family: var(--fonte1);
-}
-
-article {
-    display: flexbox;
-}
-
-ul {
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor1);
     display: flex;
-    
-}
-
-li {
-    margin: auto;
-}
-
-p {
-    padding: 7px;
-}
-
-.shelf-product_info {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-flow: column nowrap;
-    text-align: center;
-    -webkit-box-flex: 1;
-    flex: 1 1 100%;
-}
-
-.shelf-product__link{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    padding: 5px 0;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: var(--cor2);
+    font-size: 3vw;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--bg1);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px var(--box-shadow);
+}
+
+.card-login > h1 {
+    color: var(--card-login);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--bg2);
+    color: var(--cor3);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px var(--box-shadow);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: var(--cor3);
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: var(--cor4);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--btn-login);
+    background: var(--card-login);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
 }
 
 :root {
-    --cor1: #231F20;
-    --cor2: #568259;
-    --cor3: #667761;
-    --cor4: #D8DBE2;
-    --cor5: #0090C1;
+    --cor1: #201b2c;
+    --cor2: #77ffc0;
+    --cor3: #f0ffffde;
+    --cor4: #f0ffff96;
 
-    --fonte-titulo: 'BP', 'cursive';
-    --fonte-destaque: 'Anti', 'cursive';
-    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
-}
+    --card-login: #00ff88;
+    --btn-login: #2b134b;
 
-.imagem {
-    background-color: rgb(49, 49, 49);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
-    background-size: cover;
-    background-attachment: fixed;
+    --bg1: #2f2841;
+    --bg2: #514869;
+
+    --box-shadow: #00000056;
 }

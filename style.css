@@ -112,6 +112,11 @@ body * {
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+.btn-login > a {
+    text-decoration: none;
+    color: var(--btn-login);
+}
+
 @media only screen and (max-width: 950px){
     .card-login {
         width: 85%;
@@ -144,6 +149,25 @@ body * {
     .card-login {
         width: 90%;
     }
+}
+
+.cadastrar {
+    padding: 2px 5px;
+    border-radius: 8px;
+    background: var(--bg2);
+    color: var(--card-login);
+    text-decoration: none;
+}
+
+.cadastrar:hover {
+    text-decoration: underline;
+    color: #48ffaa;
+    padding: 7px;
+    transition: 0.6s;
+}
+
+.cadastro1 {
+    font-size: 1.8vh;
 }
 
 :root {
